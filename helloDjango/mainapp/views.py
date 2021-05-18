@@ -58,3 +58,7 @@ def update_user(request):
 def update_post(request):
     # TODO
     pass
+
+
+def qas(request):
+    pass
