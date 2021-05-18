@@ -62,3 +62,7 @@ def update_post(request):
 
 def qas(request):
     pass
+
+
+def sdawd(request):
+    pass
