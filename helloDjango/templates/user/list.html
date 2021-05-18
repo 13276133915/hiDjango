@@ -8,15 +8,14 @@
     <h3>{{ msg }}</h3>
     <ul>
         <table border="1"  cellpadding="8" style="border-collapse: collapse;">
-        {% for user in users %}
-
-            <tr>
-                <td>{{ user.id }}</td>
-                <td>{{ user.name }}</td>
-                <td>{{ user.age }}</td>
-                <td>{{ user.phone }}</td>
-            </tr>
-        {% endfor %}
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.age }}</td>
+                    <td>{{ user.phone }}</td>
+                </tr>
+            {% endfor %}
         </table>
     </ul>
 </body>

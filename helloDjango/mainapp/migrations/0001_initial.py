@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('phone', models.CharField(max_length=11)),
             ],
             options={
-                'db_table': 't_user',
+                'db_table': 'app_user',
             },
         ),
     ]
