@@ -66,3 +66,8 @@ def qas(request):
 
 def sdawd(request):
     pass
+
+
+# 请求参数的实例类
+def password_incurrent(qepuest):
+    pass
