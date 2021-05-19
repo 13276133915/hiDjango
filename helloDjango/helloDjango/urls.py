@@ -22,6 +22,9 @@ from django.http import HttpRequest, HttpResponse
 # 声明views的处理函数
 # view处理函数必须要求声明一个request参数，表示客户端的请求对象
 # 请求对象中包含那些信息 请求头headers（method， url， path_info, COOKIES）
+import xadmin
+
+
 def index(request: HttpRequest):
     users = [{'id': 1, 'name':'disen'},
             {'id': 2, 'name':'jack'},

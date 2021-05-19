@@ -39,7 +39,8 @@ class FuritRntity(models.Model):
     category = models.ForeignKey(CateTypeEntity,on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name+"-"+self.source
+        return self.name + "-"+self.source
+
 
 
     class Meta:
