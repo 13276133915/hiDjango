@@ -1,5 +1,5 @@
 from django.contrib import admin
-from mainapp.models import UserEntity, CateTypeEntity, FuritRntity
+from mainapp.models import UserEntity, CateTypeEntity, FuritRntity, StoreEntity
 
 # Register your models here.
 
@@ -18,8 +18,14 @@ class CateTypeAdmin(admin.ModelAdmin):
 class FruitAdmin(admin.ModelAdmin):
     list_display = ('name', 'source', 'price', 'category')
 
+class StoreAdmin(admin.ModelAdmin):
+    list_display = ('id_', 'name', 'adress', 'city', 'store_type')
+    # 指定表单修改的字段
+    fields = ('name', 'city', 'adress', 'store_type')
+
 
 # 将模型增加到站点中
 admin.site.register(UserEntity, Useradmin)
 admin.site.register(CateTypeEntity, CateTypeAdmin)
 admin.site.register(FuritRntity, FruitAdmin)
+admin.site.register(StoreEntity, StoreAdmin)
